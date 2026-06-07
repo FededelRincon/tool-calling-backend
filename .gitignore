@@ -3,6 +3,9 @@
 /node_modules
 /build
 
+# secretos / credenciales (service account de Firebase, etc.)
+/secrets
+
 # Logs
 logs
 *.log
