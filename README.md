@@ -1,10 +1,8 @@
 # Backend — Asistente con Tool Calling (NestJS)
 
-Motor de *tool calling* sobre Cloud Firestore con Gemini. Expone un único endpoint
+Motor de _tool calling_ sobre Cloud Firestore con Gemini. Expone un único endpoint
 `POST /tooling-chat` que corre el loop agéntico: el modelo elige herramientas, el backend las
 ejecuta contra Firestore y devuelve la respuesta + los pasos.
-
-Ver el [README raíz](../README.md) para la visión completa y el diagrama de arquitectura.
 
 ## Setup
 
@@ -18,6 +16,7 @@ npm run start:dev           # http://localhost:3001
 ## Endpoint
 
 `POST /tooling-chat`
+
 ```jsonc
 // request
 { "message": "¿cuánto sale el monitor con markup3?", "conversationId": "opcional" }
